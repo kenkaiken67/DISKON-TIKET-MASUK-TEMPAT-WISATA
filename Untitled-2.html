@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Diskon Tiket Masuk Tempat Wisata</h2>
+    <script>
+        let hari = prompt("Masukkan Hari Kunjungan:");
+        let hargaNormal = 40000;
+        let totalHarga = 0;
+
+        if (hari === "jumat") {
+            totalHarga = hargaNormal * (1 - 0.2);
+        } else {
+            totalHarga = hargaNormal;
+        }
+
+        document.write("Hari Kunjungan: <b>" + hari + "</b><br>");
+        document.write("Total Harga yang Harus Dibayar: <b>Rp " + totalHarga + "</b>");
+    </script>
+</body>
+</html>
